@@ -69,7 +69,6 @@ nav ul li a:hover {
 */
 /* Стили для кнопки смены языка */
 .language-switcher {
-     display: none;
     bottom: 20px;
     width: 100%;
     text-align: center;
