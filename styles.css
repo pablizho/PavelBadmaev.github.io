@@ -1,0 +1,395 @@
+/* Сбросить стили, общие стили */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding-left: 200px; /* Отступ слева для фиксированной навигации */
+}
+
+header {
+    flex-shrink: 0;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+/* Стили для навигации */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #fff; /* Цвет фона для навигации */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Небольшая тень для визуального отделения от контента */
+    z-index: 1000; /* Убедитесь, что навигация будет над другими элементами */
+    padding-top: 20px; /* Отступ сверху */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Выравнивание пунктов по центру */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Располагаем пункты по всей ширине навигационного блока */
+}
+
+nav ul li {
+    width: 100%; /* Пункты занимают всю ширину */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333; /* Цвет текста */
+    font-weight: bold; /* Жирный шрифт */
+    padding: 10px 15px; /* Внутренние отступы */
+    display: block; /* Блочный элемент */
+    text-align: center; /* Центрирование текста */
+    background-color: #f0f0f0; /* Фоновый цвет */
+    border-radius: 5px; /* Закругление углов */
+    transition: background-color 0.3s, color 0.3s; /* Плавное изменение цвета при наведении */
+    margin-bottom: 10px; /* Отступ между пунктами */
+}
+
+nav ul li a:hover {
+    background-color: #007bff; /* Фоновый цвет при наведении */
+    color: #fff; /* Цвет текста при наведении */
+}
+
+/*body {
+    padding-top: 60px; /* Добавляем отступ сверху, чтобы компенсировать фиксированную навигацию */
+}
+*/
+/* Стили для кнопки смены языка */
+.language-switcher {
+    
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Стили для остального контента */
+main {
+    max-width: 800px; /* Максимальная ширина контейнера для лучшего чтения */
+    margin: 0 auto; /* Центрирование контейнера на странице */
+    padding: 20px; /* Внутренние отступы для контейнера */
+    flex-grow: 1;
+}
+
+section {
+    margin-bottom: 40px; /* Добавление отступа между разделами */
+    padding: 20px; /* Внутренние отступы для каждого раздела */
+    border-radius: 10px; /* Закругление углов для каждого раздела */
+    background-color: #f9f9f9; /* Фоновый цвет для каждого раздела */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень */
+}
+
+section h2 {
+    margin-top: 0; /* Убираем верхний отступ у заголовка */
+    font-size: 24px; /* Увеличим размер шрифта заголовка */
+}
+
+section p {
+    line-height: 1.6; /* Увеличим межстрочный интервал */
+}
+
+section a {
+    color: #007bff; /* Цвет ссылок */
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    transition: color 0.3s; /* Плавное изменение цвета ссылок при наведении */
+}
+
+section a:hover {
+    color: #0056b3; /* Цвет ссылок при наведении */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Установка шрифта */
+    font-size: 15px; /* Установка размера шрифта */
+    line-height: 1; /* Установка межстрочного интервала */
+    color: #333; /* Цвет текста */
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+h1 {
+    font-size: 24px; /* Размер шрифта для заголовка первого уровня */
+}
+
+h2 {
+    font-size: 20px; /* Размер шрифта для заголовка второго уровня */
+}
+
+h3 {
+    font-size: 18px; /* Размер шрифта для заголовка третьего уровня */
+}
+
+p {
+    margin-bottom: 15px; /* Отступ снизу */
+}
+
+ul, ol {
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+li {
+    margin-bottom: 5px; /* Отступ между элементами списка */
+}
+
+.banner {
+    background-color: #000;
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.banner img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.banner-text {
+    margin-left: 40px;
+}
+
+.banner-text h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.banner-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info i {
+    margin-right: 10px;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 16px; /* Увеличиваем отступы, чтобы кнопка была не угловатой */
+    position: relative;
+    top: -15px; /* Измените значение, если нужно */
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center; /* Выравниваем содержимое по вертикали */
+    justify-content: center; /* Выравниваем содержимое по горизонтали */
+    border-radius: 20px; /* Добавляем скругления */
+}
+
+.dropbtn i {
+    margin-right: 8px; /* Отступ между иконкой и аббревиатурой */
+}
+
+.lang-code {
+    font-size: 14px; /* Размер шрифта для аббревиатуры */
+}
+
+.language-switcher {
+    margin-top: 20px; /* Добавим верхний отступ */
+}
+
+.dropdown {
+    position: relative; /* Позиционирование относительно родителя */
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none; /* Скрыть содержимое по умолчанию */
+    position: absolute;
+    background-color: #f9f9f9; /* Фоновый цвет выпадающего меню */
+    min-width: 160px;
+    z-index: 1; /* Поднять выпадающее меню над остальными элементами */
+    border-radius: 5px; /* Закругление углов */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Тень */
+}
+
+.dropdown-content.show {
+    display: block; /* Показать содержимое при нажатии */
+}
+
+.dropdown-content button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Плавное изменение цвета при наведении */
+}
+
+.dropdown-content button i {
+    /* Добавляем немного отступа к иконкам */
+    margin-right: 8px;
+}
+
+.dropdown-content button:hover {
+    background-color: #ddd; /* Цвет фона при наведении */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.lang-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.lang-btn:hover {
+    color: #0056b3; /* Темно-синий цвет при наведении */
+}
+
+.lang-btn.active {
+    color: #0056b3; /* Темно-синий цвет для активной кнопки */
+}
+
+.game-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Выравнивание по центру */
+}
+
+.game-info h3 {
+    margin-top: 0; /* Убираем верхний отступ */
+    font-size: 20px; /* Размер шрифта */
+    width: 100%; /* Занимает всю ширину родительского блока */
+    text-align: center; /* Выравнивание по центру */
+}
+
+.games-container {
+    display: flex;
+    flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку, если не хватает места */
+    justify-content: space-between; /* Равномерное распределение элементов по ширине контейнера */
+}
+
+.star.full {
+    background-position: 0 0; /* Полная звезда */
+}
+
+.star.half {
+    background-position: 0 -20px; /* Половинная звезда */
+}
+
+.star.empty {
+    background-position: 0 -40px; /* Пустая звезда */
+}
+
+.pioner-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pioner {
+    width: calc(25% - 5px); /* Распределение игр по трем колонкам */
+    margin-bottom: 10px; /* Отступ между играми */
+    padding: 10px; /* Внутренние отступы */
+    border-radius: 10px; /* Закругление углов */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень */
+}
+
+.pioner a {
+    display: inline-block; /* Делаем ссылку блочным элементом */
+    border-radius: 20px; /* Скругляем углы ссылки */
+    overflow: hidden; /* Обрезаем контент, который выходит за границы ссылки */
+    transition: transform 0.2s; /* Плавное изменение масштаба */
+}
+
+.pioner a:hover img {
+    transform: scale(1.12); /* Увеличиваем изображение при наведении */
+}
+
+.pioner img {
+    border-radius: 10px; /* Закругляем углы изображения */
+    transition: transform 0.3s ease; /* Добавляем плавный переход */
+    border: none; /* Убираем границу у изображения */
+}
+
+.pioner-info {
+    padding: 1px 0;
+}
+
+.pioner-info h3 {
+    margin-top: 0; /* Убираем верхний отступ */
+    font-size: 20px; /* Размер шрифта */
+}
+
+.rating-download {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Равномерное распределение между элементами */
+    width: 100%; /* Занимает всю ширину родительского блока */
+    position: relative; /* Позиционируем элемент для добавления псевдоэлемента */
+}
+
+.rating-download::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: calc(50% - 1px); /* Размещаем линию посередине блока */
+    width: 2px; /* Ширина линии */
+    background-color: #ccc; /* Цвет линии */
+}
+
+.rating {
+    align-items: center;
+    justify-content: flex-end; /* Выравнивание рейтинга вправо */
+    font-weight: bold; /* Жирный шрифт */
+}
+
+.rating-value {
+    margin-right: 5px; /* Отступ справа */
+}
+
+.rating-icon {
+    margin-left: 5px; /* Отступ слева */
+}
+
+.download-count {
+    font-weight: bold; /* Жирный шрифт */
+    align-items: center;
+    text-align: left; /* Выравнивание количества скачиваний влево */
+}
+
+.download-text {
+    font-weight: normal; /* Обычный шрифт */
+    margin-left: 5px; /* Отступ слева */
+}
