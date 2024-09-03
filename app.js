@@ -77,6 +77,16 @@ document.addEventListener("DOMContentLoaded", function() {
         if (bannerTitle) bannerTitle.textContent = translations.bannerTitle;
         if (bannerSubtitle) bannerSubtitle.textContent = translations.bannerSubtitle;
         if (bannerExperience) bannerExperience.textContent = translations.bannerExperience;
+    // Обновление заголовков в разделе навыков
+        const skillsTitle = document.querySelector('#skills h2');
+        const advancedTitle = document.querySelector('#skills .skill-level:nth-child(1) h3');
+        const intermediateTitle = document.querySelector('#skills .skill-level:nth-child(2) h3');
+        const basicTitle = document.querySelector('#skills .skill-level:nth-child(3) h3');
+        
+        if (skillsTitle) skillsTitle.textContent = translations.skills;
+        if (advancedTitle) advancedTitle.textContent = translations.advancedLevel;
+        if (intermediateTitle) intermediateTitle.textContent = translations.intermediateLevel;
+        if (basicTitle) basicTitle.textContent = translations.basicLevel;
     } else {
         console.error("Перевод для выбранного языка не найден");
     }
