@@ -1,255 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Павел - Портфолио QA</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Павел - Портфолио QA</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 <body>
-    <header>
-        <div class="banner">
-            <img src="Photo.jpg" alt="Ваше имя">
-            <div class="banner-text">
-                <h1 data-lang-content="bannerTitle"></h1>
-                <p data-lang-content="bannerSubtitle"></p>
-                <p data-lang-content="bannerExperience"></p>
-                <div class="contact-info">
-                    <p><i class="fas fa-envelope"></i> pavelsmirnov98@gmail.com</p>
-                    <p><i class="fas fa-phone"></i> +7 (953) 807-53-71</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Новосибирск, Россия</p>
-                    <p><a href="https://t.me/Zogang" target="_blank"><i class="fab fa-telegram"></i>@Zogang</a></p>
-                </div>
-            </div>
-        </div>        
-    </header>
-    
-    <nav>
-        <!-- <button class="toggle-menu"><i class="fas fa-bars"></i></button>-->
-    <ul>
-            <li><a href="#about" data-lang-content="aboutMe">Обо мне</a></li>
-            <li><a href="#experience" data-lang-content="experience">Опыт работы</a></li>
-            <li><a href="#skills" data-lang-content="skills">Навыки</a></li>
-            <li><a href="#portfolio" data-lang-content="portfolio">Портфолио</a></li>
-            <li><a href="#contact" data-lang-content="contact">Контакты</a></li>
-        </ul>
-<!--
-        <div class="language-switcher">
-            <div class="dropdown">
-                <button class="dropbtn" aria-label="Выбор языка">
-                    <i class="fas fa-globe"></i>
-                    <span class="lang-code">RU</span> 
-                </button>
-                <div class="dropdown-content">
-                    <button class="lang-btn" data-lang="ru">Русский</button>
-                    <button class="lang-btn" data-lang="en">English</button>
-                    <button class="lang-btn" data-lang="zh">中文</button>
-                    <button class="lang-btn" data-lang="kk">Қазақша</button>
-                    <button class="lang-btn" data-lang="be">Беларуская</button>
-                    <button class="lang-btn" data-lang="uk">Українська</button>
-                </div>
-            </div>
+  <header>
+    <div class="banner">
+      <img src="Photo.jpg" alt="Ваше фото">
+      <div class="banner-text">
+        <h1 data-lang-content="bannerTitle"></h1>
+        <p data-lang-content="bannerSubtitle"></p>
+        <p data-lang-content="bannerExperience"></p>
+        <div class="contact-info">
+          <p><i class="fas fa-envelope"></i> pavelsmirnov98@gmail.com</p>
+          <p><i class="fas fa-phone"></i> +7 (953) 807-53-71</p>
+          <p><i class="fas fa-map-marker-alt"></i> Новосибирск, Россия</p>
+          <p><a href="https://t.me/Zogang" target="_blank"><i class="fab fa-telegram"></i>@Zogang</a></p>
         </div>
-    -->    
-    </nav>
+      </div>
+    </div>        
+  </header>
+    
+  <nav>
+    <ul>
+      <li><a href="#about" data-lang-content="aboutMe">Обо мне</a></li>
+      <li><a href="#experience" data-lang-content="experience">Опыт работы</a></li>
+      <li><a href="#skills" data-lang-content="skills">Навыки</a></li>
+      <li><a href="#portfolio" data-lang-content="portfolio">Портфолио</a></li>
+      <li><a href="#contact" data-lang-content="contact">Контакты</a></li>
+    </ul>
+  </nav>
 
-    <main>
-     <section id="about">
-        <h2 data-lang-content="aboutMe">Обо мне</h2>
-        <div data-lang-content="bioContent"></div>
+  <main>
+    <section id="about">
+      <h2 data-lang-content="aboutMe"></h2>
+      <div data-lang-content="bioContent"></div>
     </section>
 
     <section id="experience">
-        <h2 data-lang-content="experience">Опыт работы</h2>
-        <p data-lang-content="experienceContent"></p>
+      <h2 data-lang-content="experience"></h2>
+      <div class="experience-container"></div>
     </section>
 
     <section id="skills">
-            <h2 data-lang-content="skills">Навыки</h2>
-            <div class="skills-container">
-                <div class="skill-level">
-                    
-                    
-                        <li>Функциональное тестирование</li>
-                        <li>Сквозное тестирование</li>
-                        <li>Приемочное тестирование</li>
-                        <li>Тестирование производительности</li>
-                        <li>Smoke-тестирование</li>
-                        <li>Регрессионное тестирование</li>
-                        <li>Ручное тестирование</li>
-                        <li>Подготовка тестовых данных</li>
-                        <li>A/B тесты</li>                    
-                        <li>Android Studio</li>
-                        <li>Adb logcat</li>
-                        <li>Imazing</li>                                   
-                        <li>Selenium IDE</li>                        
-                        <li>Trello</li>
-                        <li>Jira</li>
-                        <li>Confluence</li>
-                        <li>Notion</li>
-                        <li>Firebase</li>
-                        <li>Game Analytics</li>
-                        <li>TeamCity</li>
-                        <li>Appium</li>
-                        <li>Unity</li>
-                        <li>Visual Studio C#</li>
-                        <li>Charles</li>
-                        <li>Postman</li>
-                        <li>Git</li>
-                        <li>MySQL</li>
-                        <li>Photoshop</li>
-
-                        
-                    
-                
-            </div>
-        </section>
+      <h2 data-lang-content="skills"></h2>
+      <div class="skills-container"></div>
+    </section>
 
     <section id="portfolio">
-        <h2 data-lang-content="portfolio">Портфолио</h2>
-        <div class="games-container">
-            <div class="pioner">
-                <a href="https://play.google.com/store/apps/details?id=com.norwichsidegames.tothemoon">
-                    <img src="Image/Pioner.jpg" alt="Pioner"></a>
-                    <div class="game-info">
-                        <h3>Moon pioneer</h3>
-                        <div class="rating-download">
-                            <div class="rating">
-                                <span class="rating-icon"><i class="fas fa-star"></i></span>
-                                <span class="review-count">56.9 тыс.</span>
+      <h2 data-lang-content="portfolio"></h2>
+      <div class="portfolio-container"></div>
+    </section>
 
-                            </div>
-                            <div class="download-count"><i class="fas fa-download"></i> 10 млн + <span class="download-text"></span></div>
+    <section id="contact">
+      <h2 data-lang-content="contact"></h2>
+      <div data-lang-content="contactContent"></div>
+      <!-- Форма обратной связи можно добавить по необходимости -->
+    </section>
+  </main>
 
-                        </div>
+  <footer>
+    <!-- Копирайт, ссылки на соцсети и т.п. -->
+  </footer>
 
-                    </div>
-                </div>
-
-                <div class="pioner">
-                    <a href="https://play.google.com/store/apps/details?id=com.lilacwoodgames.oilman">
-                        <img src="Image/Oilman.jpg" alt="Oilman"></a>
-                        <div class="game-info">
-                            <h3>Oilman</h3>
-                            <div class="rating-download">
-                                <div class="rating">
-                                    <span class="rating-icon"><i class="fas fa-star"></i></span>
-                                    <span class="review-count">28.5 тыс.</span>
-
-                                </div>
-                                <div class="download-count"><i class="fas fa-download"></i> 5 млн + <span class="download-text"></span></div>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="pioner">
-                        <a href="https://play.google.com/store/apps/details?id=by.hitbox.magicwoods">
-                            <img src="Image/Lumberjack.jpg" alt="Idle Lumberjack 2"></a>
-                            <div class="game-info">
-                                <h3>Idle Lumberjack 2</h3>
-                                <div class="rating-download">
-                                    <div class="rating">
-                                        <span class="rating-icon"><i class="fas fa-star"></i></span>
-                                        <span class="review-count">108 тыс.</span>
-
-                                    </div>
-                                    <div class="download-count"><i class="fas fa-download"></i> 10 млн + <span class="download-text"></span></div>
-
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="pioner">
-                            <a href="https://play.google.com/store/apps/details?id=com.redflowersgames.beekeeper">
-                                <img src="Image/Beekeeper.jpg" alt="Beekeeper"></a>
-                                <div class="game-info">
-                                    <h3>Beekeeper</h3>
-                                    <div class="rating-download">
-                                        <div class="rating">
-                                            <span class="rating-icon"><i class="fas fa-star"></i></span>
-                                            <span class="review-count">3.32 тыс.</span>
-
-                                        </div>
-                                        <div class="download-count"><i class="fas fa-download"></i> 1 млн + <span class="download-text"></span></div>
-
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="pioner">
-                                <a href="https://play.google.com/store/apps/details?id=com.mountaincreekgames.waterpower">
-                                    <img src="Image/Water_power.jpg" alt="Water Power"></a>
-                                    <div class="game-info">
-                                        <h3>Water Power</h3>
-                                        <div class="rating-download">
-                                            <div class="rating">
-                                                <span class="rating-icon"><i class="fas fa-star"></i></span>
-                                                <span class="review-count">12.9 тыс.</span>
-
-                                            </div>
-                                            <div class="download-count"><i class="fas fa-download"></i> 1 млн + <span class="download-text"></span></div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <div class="pioner">
-                                    <a href="https://play.google.com/store/apps/details?id=com.stereo7games.tl">
-                                        <img src="Image/Camp_Defense.jpg" alt="Camp Defense"></a>
-                                        <div class="game-info">
-                                            <h3>Camp Defense</h3>
-                                            <div class="rating-download">
-                                                <div class="rating">
-                                                    <span class="rating-icon"><i class="fas fa-star"></i></span>
-                                                    <span class="review-count">28.5 тыс.</span>
-
-                                                </div>
-                                                <div class="download-count"><i class="fas fa-download"></i> 1 млн + <span class="download-text"></span></div>
-
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-
-                                </div>
-
-                            </div>
-
-
-                            <!-- Добавьте дополнительные игры по аналогии -->
-                        </section>
-
-                        <section id="contact">
-                            <h2 data-lang-content="contact">Контакты</h2>
-                             <div data-lang-content="contactContent"></div>
-                            <!-- Форма обратной связи -->
-
-                            <form>
-                <!-- 
-            <label for="name">Имя:</label>
-            <input type="text" id="name" name="name">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-            <label for="message">Сообщение:</label>
-            <textarea id="message" name="message"></textarea>
-            <button type="submit">Отправить</button>
-        -->
-    </form>
-</section>
-</main>
-
-<footer>
-    <!-- Копирайт, ссылки на соц.сети -->
-</footer>
-
-<script src="content.js"></script>
-<script src="app.js" defer></script>
+  <script src="content.js"></script>
+  <script src="app.js" defer></script>
 </body>
 </html>
