@@ -1,140 +1,195 @@
 const content = {
-    ru: {
-        aboutMe: 'Обо мне',
-        experience: 'Опыт работы',
-        skills: 'Навыки',
-        portfolio: 'Портфолио',
-        contact: 'Контакты',
-        bioContent: `<p>Привет! Меня зовут Павел. Я QA engineer с четырехлетним опытом работы в мобильной игровой индустрии.</p>
-                     <p>В последние годы я работал в студиях Stereo 7, Playphoria, где приобрел опыт работы с Git, Unity, и автоматизацией тестирования. Работаю преимущественно в жанрах hyper/hybrid casual/tower defense. </p>
-                     <p>Пробовал себя в созданиии мобильных игр на Unity, занимался частичным менеджментом проектов.</p>
-                     <p>Мой образовательный путь начался с средней школы, продолжился в строительном колледже, где я получил техническое образование, затем я прошел курсы по тестированию от GeekBrains, которые помогли мне систематизировать и расширить мои знания в области QA. На данный момент я продолжаю развиваться в области ручного, автоматизированного тестирования и разработки.</p>`,
-        experienceContent: `
-            <h3><a href="https://www.playphoria.io/" target="_blank">Playphoria</a></h3>
-            <p><strong>Должность:</strong> QA</p>
-            <p><strong>Период:</strong> Декабрь 2021 — Август 2024 (2 года 9 месяцев)</p>
-            <ul>
-                <li>Тестирование мобильных игр на Android/iOS/Unity</li>
-                <li>Тестирование готовых игр, прототипов, и внутренней платформы компании.</li>
-                 <li>Регрессионное, интеграционное, функциональное, нефункциональное, исследовательское тестирование с применением техник тест дизайна.</li>
-                  <li>А/Б Тестирование.</li>
-                   <li>Сбор логов через Charles, Adb logcat, imazing.</li>
-                    <li>Работа с Git, Unity</li>
-                     <li>Работа c GameAnalytics</li>
-                <li>Составление и актуализация тестовой документации</li>
-                <li>Генерация идей для новых и текущих проектов/прототипов</li>
-                <li>Модерация Discord серверов</li>
-                <li>Загрузка ассетов из Asset Store в собственный сервер компании</li>
-                <li>Автоматизация тестироваия на Appium</li>
-                <li>Работа с Notion,Clickup,Trello</li>
-                <li>Загрузка билдов в Google play и App store</li>
-                <li>Подготовка скриншотов для сторов</li>
-            </ul>
+  ru: {
+    aboutMe: 'Обо мне',
+    experience: 'Опыт работы',
+    skills: 'Навыки',
+    portfolio: 'Портфолио',
+    contact: 'Контакты',
+    bioContent: `<p>Привет! Меня зовут Павел. Я QA engineer с четырехлетним опытом работы в мобильной игровой индустрии.</p>
+                 <p>В последние годы я работал в студиях Stereo 7, Playphoria и Finiki Games, где приобрёл опыт работы с Git, Unity и автоматизацией тестирования. Моя специализация – hyper/hybrid casual и tower defense, а также я участвовал в создании мобильных игр на Unity и занимался частичным менеджментом проектов.</p>
+                 <p>Образование началось со школы, продолжилось в строительном колледже, а затем курсы по тестированию от GeekBrains позволили систематизировать знания в области QA. Сейчас развиваюсь в ручном и автоматизированном тестировании, а также в разработке.</p>`,
+    experienceContent: [
 
-            <h3><a href="https://www.stereo7.com/" target="_blank">Stereo 7</a></h3>
-            <p><strong>Должность:</strong> QA engineer</p>
-            <p><strong>Период:</strong> Февраль 2021 — Декабрь 2021 (11 месяцев)</p>
-            <ul>
-                
-                <li>Поиск и документирование багов в новых фичах билда</li>
-                <li>Регрессионное, интеграционное, функциональное, нефункциональное, исследовательское тестирование с применением техник тест дизайна.</li>
-                <li>Тестирование клиент-серверной архитектуры (Postman).</li>
-                <li>Работа с Firebase.</li>
-                <li>Сбор логов через Charles, Adb logcat, imazing.</li>
-                <li>Регрессионное тестирование</li>
-                <li>Релиз новых версий на Google Play</li>
-                <li>A/B тестирование</li>
-                <li>Частичное управление проектами</li>
-                <li>Работа с Trello,Jira,Confluense</li>
-                <li>Customer support</li>
-            </ul>
+       {
+        company: 'Finiki Games',
+        url: 'https://finiki.games/',
+        position: 'QA Engineer',
+        period: 'Сентябрь 2024 — по настоящее время',
+        responsibilities: [
+          'Тестирование Match-3 RPG (<a href="https://play.google.com/store/apps/details?id=com.finiki.ac.puzzlerpg" target="_blank">PuzzlerPG</a>)',
+          'Тестирование клиент-серверной архитектуры: проверка работы как на серверной, так и на клиентской стороне',
+          'Изменение и валидация JSON на сервере',
+          'Приемка фичей',
+          'Тестирование в редакторе Unity',
+          'Выполнение стандартных QA задач'
+        ]
+      },
 
-            <h3>VK Testers</h3>
-            <p><strong>Должность:</strong> Тестировщик</p>
-            <p><strong>Период:</strong> Декабрь 2020 — Январь 2021 (2 месяца)</p>
-            <ul>
-                <li>Тестирование приложений ВКонтакте</li>
-            </ul>
 
-            <h3>Utest</h3>
-            <p><strong>Должность:</strong> Краудтестер</p>
-            <p><strong>Период:</strong> Июнь 2020 — Ноябрь 2020 (6 месяцев)</p>
-            <ul>
-                <li>Написание тест-кейсов</li>
-                <li>Составление баг-репортов</li>
-            </ul>
-        `,
-        contactContent: `
-            <ul class="contact-list">
-                <li><i class="fas fa-envelope"></i> <a href="mailto:pavelsmirnov98@gmail.com">pavelsmirnov98@gmail.com</a></li>
-                <li><i class="fas fa-phone"></i> <a href="tel:+79538075371">+7 (953) 807-53-71</a></li>
-                <li><i class="fas fa-map-marker-alt"></i> Новосибирск, Россия</li>
-                <li><i class="fab fa-telegram"></i> <a href="https://t.me/Zogang" target="_blank">@Zogang</a></li>
-            </ul>
-        `,
-        bannerTitle: 'Павел Бадмаев',
-        bannerSubtitle: 'QA GameDev',
-        bannerExperience: 'Опыт работы 4 года 3 месяца',
-        // Другие переводы для баннера
+      {
+        company: 'Playphoria',
+        url: 'https://www.playphoria.io/',
+        position: 'QA',
+        period: 'Декабрь 2021 — Август 2024 (2 года 9 месяцев)',
+        responsibilities: [
+          'Тестирование мобильных игр на Android/iOS/Unity',
+          'Тестирование готовых игр, прототипов и внутренней платформы компании',
+          'Регрессионное, интеграционное, функциональное и нефункциональное тестирование',
+          'A/B тестирование',
+          'Сбор логов через Charles, Adb logcat, imazing',
+          'Работа с Git и Unity',
+          'Интеграция с GameAnalytics',
+          'Подготовка и актуализация тестовой документации',
+          'Генерация идей для новых и текущих проектов',
+          'Модерация Discord-серверов',
+          'Загрузка ассетов из Asset Store на сервер компании',
+          'Автоматизация тестирования на Appium',
+          'Работа с Notion, Clickup, Trello',
+          'Загрузка билдов в Google Play и App Store',
+          'Подготовка скриншотов для сторов'
+        ]
+      },
+      
+      {
+        company: 'Stereo 7',
+        url: 'https://www.stereo7.com/',
+        position: 'QA engineer',
+        period: 'Февраль 2021 — Декабрь 2021 (11 месяцев)',
+        responsibilities: [
+          'Поиск и документирование багов в новых фичах билда',
+          'Регрессионное, интеграционное и функциональное тестирование',
+          'Тестирование клиент-серверной архитектуры (Postman)',
+          'Работа с Firebase',
+          'Сбор логов через Charles, Adb logcat, imazing',
+          'Релиз новых версий на Google Play',
+          'A/B тестирование',
+          'Частичное управление проектами',
+          'Работа с Trello, Jira, Confluence',
+          'Customer support'
+        ]
+      },
+      {
+        company: 'VK Testers',
+        position: 'Тестировщик',
+        period: 'Декабрь 2020 — Январь 2021 (2 месяца)',
+        responsibilities: [
+          'Тестирование приложений ВКонтакте'
+        ]
+      },
+      {
+        company: 'Utest',
+        position: 'Краудтестер',
+        period: 'Июнь 2020 — Ноябрь 2020 (6 месяцев)',
+        responsibilities: [
+          'Написание тест-кейсов',
+          'Составление баг-репортов'
+        ]
+      }
+    ],
+    skillsGroups: {
+      testing: {
+        title: 'Тестирование',
+        skills: [
+          'Функциональное тестирование',
+          'Сквозное тестирование',
+          'Приемочное тестирование',
+          'Тестирование производительности',
+          'Smoke-тестирование',
+          'Регрессионное тестирование',
+          'Ручное тестирование',
+          'Подготовка тестовых данных',
+          'A/B тесты',
+          'Тестирование клиент-серверных приложений'
+        ]
+      },
+      tools: {
+        title: 'Инструменты',
+        skills: [
+          'Android Studio',
+          'Adb logcat',
+          'Imazing',
+          'Selenium IDE',
+          'Trello',
+          'Jira',
+          'Confluence',
+          'Notion',
+          'Firebase',
+          'Game Analytics',
+          'TeamCity',
+          'Appium',
+          'Unity',
+          'Visual Studio C#',
+          'Charles',
+          'Postman',
+          'Git',
+          'MySQL',
+          'Photoshop',
+          'Работа с JSON'
+        ]
+      }
     },
-    en: {
-        aboutMe: 'About Me',
-        experience: 'Work Experience',
-        portfolio: 'Portfolio',
-        contact: 'Contact',
-        bioContent: 'Content of your biography in English...',
-        experienceContent: 'Content of your work experience in English...',
-        // ... other content in English
-        bannerTitle: 'Pavel Badmaev',
-        bannerSubtitle: 'QA GameDev',
-        // Другие переводы для баннера
-    },
-    zh: {
-        aboutMe: '关于我',
-        experience: '工作经验',
-        portfolio: '作品集',
-        contact: '联系方式',
-        bioContent: '您的中文传记内容......',
-        experienceContent: '您的中文工作经验内容......',
-        // ... other content in Chinese
-        bannerTitle: '保尔巴德马耶夫', // Заголовок баннера на китайском
-        bannerSubtitle: 'QA GameDev', // Подзаголовок баннера на китайском
-        // Другие переводы для баннера на китайском
-    },
-    kk: {
-        aboutMe: 'Мен туралы',
-        experience: 'Жұмыс тәжірибесі',
-        portfolio: 'Портфолио',
-        contact: 'Байланыс',
-        bioContent: 'Сіздің қазақ тіліндегі өмірбаяныңыздың мазмұны...',
-        experienceContent: 'Сіздің қазақ тіліндегі жұмыс тәжірибеңіздің мазмұны...',
-        // ... other content in Kazakh
-        bannerTitle: 'Павел Бадмаев', // Заголовок баннера на казахском
-        bannerSubtitle: 'QA GameDev', // Подзаголовок баннера на казахском
-        // Другие переводы для баннера на казахском
-    },
-    be: {
-        aboutMe: 'Пра мяне',
-        experience: 'Вопыт працы',
-        portfolio: 'Партфоліа',
-        contact: 'Кантакты',
-        bioContent: 'Змест вашай біяграфіі на беларускай мове...',
-        experienceContent: 'Змест вашага вопыту працы на беларускай мове...',
-        // ... other content in Belarusian
-        bannerTitle: 'Павел Бадмаев', // Заголовок баннера на белорусском
-        bannerSubtitle: 'QA GameDev', // Подзаголовок баннера на белорусском
-        // Другие переводы для баннера на белорусском
-    },
-    uk: {
-        aboutMe: 'Про мене',
-        experience: 'Досвід роботи',
-        portfolio: 'Портфоліо',
-        contact: 'Контакти',
-        bioContent: 'Зміст вашої біографії українською мовою...',
-        experienceContent: 'Зміст вашого досвіду роботи українською мовою...',
-        // ... other content in Ukrainian
-        bannerTitle: 'Павло Бадмаєв', // Заголовок баннера на украинском
-        bannerSubtitle: 'QA GameDev', // Подзаголовок баннера на украинском
-        // Другие переводы для баннера на украинском
-    }
+    portfolioContent: [
+      {
+        title: 'Moon Pioneer',
+        image: 'Image/Pioner.jpg',
+        link: 'https://play.google.com/store/apps/details?id=com.norwichsidegames.tothemoon',
+        rating: '56.9 тыс.',
+        downloads: '10 млн+'
+      },
+      {
+        title: 'Oilman',
+        image: 'Image/Oilman.jpg',
+        link: 'https://play.google.com/store/apps/details?id=com.lilacwoodgames.oilman',
+        rating: '28.5 тыс.',
+        downloads: '5 млн+'
+      },
+      {
+        title: 'Idle Lumberjack 2',
+        image: 'Image/Lumberjack.jpg',
+        link: 'https://play.google.com/store/apps/details?id=by.hitbox.magicwoods',
+        rating: '108 тыс.',
+        downloads: '10 млн+'
+      },
+      {
+        title: 'Beekeeper',
+        image: 'Image/Beekeeper.jpg',
+        link: 'https://play.google.com/store/apps/details?id=com.redflowersgames.beekeeper',
+        rating: '3.32 тыс.',
+        downloads: '1 млн+'
+      },
+      {
+        title: 'Water Power',
+        image: 'Image/Water_power.jpg',
+        link: 'https://play.google.com/store/apps/details?id=com.mountaincreekgames.waterpower',
+        rating: '12.9 тыс.',
+        downloads: '1 млн+'
+      },
+      {
+        title: 'Camp Defense',
+        image: 'Image/Camp_Defense.jpg',
+        link: 'https://play.google.com/store/apps/details?id=com.stereo7games.tl',
+        rating: '28.5 тыс.',
+        downloads: '1 млн+'
+      },
+      {
+        title: 'PuzzlerPG',
+        image: 'Image/PuzzlerPG.jpg',
+        link: 'https://play.google.com/store/apps/details?id=com.finiki.ac.puzzlerpg',
+        rating: '749',
+        downloads: '10 тыс.+'
+      }
+    ],
+    contactContent: `
+      <ul class="contact-list">
+        <li><i class="fas fa-envelope"></i> <a href="mailto:pavelsmirnov98@gmail.com">pavelsmirnov98@gmail.com</a></li>
+        <li><i class="fas fa-phone"></i> <a href="tel:+79538075371">+7 (953) 807-53-71</a></li>
+        <li><i class="fas fa-map-marker-alt"></i> Новосибирск, Россия</li>
+        <li><i class="fab fa-telegram"></i> <a href="https://t.me/Zogang" target="_blank">@Zogang</a></li>
+      </ul>
+    `,
+    bannerTitle: 'Павел Бадмаев',
+    bannerSubtitle: 'QA GameDev',
+    bannerExperience: 'Опыт работы 4 года 10 месяцев'
+  },
+  // Аналогичная структура для других языков (en, zh и т.д.) при необходимости
 };
