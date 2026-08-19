@@ -27,6 +27,7 @@
     
   <nav>
     <ul>
+      <li><a href="#playable">Playable</a></li>
       <li><a href="#about" data-lang-content="aboutMe">Обо мне</a></li>
       <li><a href="#experience" data-lang-content="experience">Опыт работы</a></li>
       <li><a href="#skills" data-lang-content="skills">Навыки</a></li>
@@ -36,6 +37,49 @@
   </nav>
 
   <main>
+    <!-- Playable-реклама. Секция статична: app.js её не трогает, поэтому
+         добавление не может уронить рендер остальных блоков. -->
+    <section id="playable">
+      <h2>Playable ad — Water Power</h2>
+      <p class="playable-lead">
+        Интерактивная реклама для
+        <a href="https://play.google.com/store/apps/details?id=com.mountaincreekgames.waterpower" target="_blank">Water Power</a>:
+        HTML5, three.js / WebGL, портретная ориентация, один самодостаточный файл — ни одного
+        внешнего запроса во время игры. Ставьте водяные колёса, расширяйте реку, стройте ГЭС.
+      </p>
+      <div class="playable-stage">
+        <div class="playable-frame" id="playableFrame">
+          <button class="playable-poster" type="button" id="playableStart" aria-label="Запустить playable Water Power">
+            <span class="playable-poster-title">Water Power</span>
+            <span class="playable-poster-sub">Playable ad · three.js · портрет</span>
+            <span class="playable-poster-play" aria-hidden="true">▶</span>
+            <span class="playable-poster-hint">Нажмите, чтобы играть</span>
+          </button>
+        </div>
+      </div>
+      <p class="playable-links">
+        <a href="projects/water-power/" target="_blank">Открыть на весь экран</a>
+        <span class="playable-note">— 1,7 МБ, грузится только по нажатию</span>
+      </p>
+    </section>
+    <script>
+      // Клик-ту-плей: iframe создаётся по нажатию, чтобы главная страница не
+      // тянула 1,7 МБ и не запускала WebGL со звуком у того, кто просто листает.
+      (function () {
+        var btn = document.getElementById('playableStart');
+        if (!btn) return;
+        btn.addEventListener('click', function () {
+          var stage = document.getElementById('playableFrame');
+          var frame = document.createElement('iframe');
+          frame.src = 'projects/water-power/index.html';
+          frame.title = 'Water Power — playable ad';
+          frame.allow = 'autoplay; fullscreen';
+          stage.innerHTML = '';
+          stage.appendChild(frame);
+        });
+      })();
+    </script>
+
     <section id="about">
       <h2 data-lang-content="aboutMe"></h2>
       <div data-lang-content="bioContent"></div>
